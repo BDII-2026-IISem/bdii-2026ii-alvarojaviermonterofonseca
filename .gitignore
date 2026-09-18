@@ -1,0 +1,17 @@
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+
+# Datos y respaldos generados
+data/
+backups/
+*.bak
+*.dump
+*.log
+
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.code-workspace
