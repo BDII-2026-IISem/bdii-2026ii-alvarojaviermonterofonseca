@@ -1,0 +1,19 @@
+# Credenciales y configuraciones locales
+.env
+.env.*
+!.env.example
+
+# Datos y respaldos generados por los motores
+data/
+backups/
+*.bak
+*.dump
+
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.code-workspace
+
+# Registros
+*.log

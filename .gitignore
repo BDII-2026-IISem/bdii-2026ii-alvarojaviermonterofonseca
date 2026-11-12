@@ -1,17 +1,54 @@
-# Credenciales y configuración local
+# =========================================================
+# Parqueo Ágil · Archivos que no deben subirse al repositorio
+# =========================================================
+
+# Variables de entorno y credenciales
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
 
-# Datos y respaldos generados
+# Python / Django
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+db.sqlite3
+staticfiles/
+media/
+
+# Node.js / Angular
+node_modules/
+.angular/
+dist/
+out-tsc/
+*.tsbuildinfo
+
+# Capturas con posible configuración local o contraseñas
+informe base de datos alvaro/evidencia/
+base de datos 2/*.png
+
+# Registros, respaldos y datos generados
+*.log
 data/
 backups/
 *.bak
 *.dump
-*.log
+*.sql.gz
 
-# Archivos del sistema y del editor
+# Editores y sistema operativo
+.vscode/
+.idea/
+*.code-workspace
 .DS_Store
 Thumbs.db
-.vscode/
-*.code-workspace
+desktop.ini
